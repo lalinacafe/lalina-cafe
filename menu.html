@@ -5,16 +5,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md">
-        <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
-        <div class="mt-2 flex flex-col items-center">
-            <span class="font-bold">Product name</span>
-            <span class="text-sm">Php 1.00</span>
+    <div class="main w-full bg-zinc-50">
+        <div class="navbar w-full h-16 fixed bg-zinc-900">
+            <div class="flex w-full h-full items-center justify-between pl-5">
+                <img src="assets/logo-white.png" width="50" height="50" class=" flex items-center" />
+                <div class="flex justify-end">
+                    <a href="navbar.html" class="text-white pr-5"> HOME </a>
+                    <a href="navbar.html" class="text-white pr-5"> MENU </a>
+                    <a href="navbar.html" class="text-white pr-10"> ABOUT US </a>
+                </div>
+            </div>
+        </div>
+        <span class="w-full flex justify-center font-bold text-3xl pt-20">PRODUCTS</span>
+        <div class="w-full flex justify-center gap-4 py-4">
+            <span class="text-lg cursor-pointer" id="products-all">All</span>
+            <span class="text-lg cursor-pointer" id="products-desserts">Desserts</span>
+            <span class="text-lg cursor-pointer" id="products-beverages">Beverages</span>
+        </div>
+        <div class="pt-6" id="desserts">
+            <span class="text-2xl font-bold cursor-pointer w-full flex justify-center">Desserts</span>
+            <div class="flex justify-center pt-4 w-full">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 2xl:col-span-3">
+                        <div class="p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+                            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
+                            <div class="mt-2 flex flex-col items-center">
+                                <span class="font-bold">Product name</span>
+                                <span class="text-sm">Php 1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 2xl:col-span-3">
+                        <div class="p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+                            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
+                            <div class="mt-2 flex flex-col items-center">
+                                <span class="font-bold">Product name</span>
+                                <span class="text-sm">Php 1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 2xl:col-span-3">
+                        <div class="p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+                            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
+                            <div class="mt-2 flex flex-col items-center">
+                                <span class="font-bold">Product name</span>
+                                <span class="text-sm">Php 1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 2xl:col-span-3">
+                        <div class="p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+                            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
+                            <div class="mt-2 flex flex-col items-center">
+                                <span class="font-bold">Product name</span>
+                                <span class="text-sm">Php 1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-6" id="beverages">
+            <span class="text-2xl font-bold cursor-pointer w-full flex justify-center">Beverages</span>
+            <div class="flex justify-center w-full pt-4">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 2xl:col-span-3">
+                        <div class="p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+                            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
+                            <div class="mt-2 flex flex-col items-center">
+                                <span class="font-bold">Product name</span>
+                                <span class="text-sm">Php 1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 2xl:col-span-3">
+                        <div class="p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+                            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
+                            <div class="mt-2 flex flex-col items-center">
+                                <span class="font-bold">Product name</span>
+                                <span class="text-sm">Php 1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 2xl:col-span-3">
+                        <div class="p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+                            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
+                            <div class="mt-2 flex flex-col items-center">
+                                <span class="font-bold">Product name</span>
+                                <span class="text-sm">Php 1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 lg:col-span-4 2xl:col-span-3">
+                        <div class="p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+                            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
+                            <div class="mt-2 flex flex-col items-center">
+                                <span class="font-bold">Product name</span>
+                                <span class="text-sm">Php 1.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $("#products-all").click(function (e) {
+                $("#desserts").removeClass("hidden");
+                $("#beverages").removeClass("hidden");
+
+                $("#products-all").removeClass("hidden");
+                $("#products-desserts").removeClass("hidden");
+                $("#products-beverages").removeClass("hidden");
+            });
+
+            $("#products-desserts").click(function (e) {
+                $("#desserts").addClass("hidden");
+                $("#beverages").removeClass("hidden");
+            });
+
+            $("#products-beverages").click(function (e) {
+                $("#desserts").removeClass("hidden");
+                $("#beverages").addClass("hidden");
+            });
+        });
+    </script>
 </body>
 
 </html>
