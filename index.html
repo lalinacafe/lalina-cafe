@@ -1,141 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Styles -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <title>La Lina Cafe | Home</title>
+  </head>
 
-  <title>La Lina Cafe | Home</title>
-</head>
-
-<body>
-  <div class="main w-full h-max bg-zinc-50">
-    <div class="navbar w-full h-16 fixed z-10"></div>
-    <div class="body">
-      <!-- Section 1 -->
-      <div class="bg-[url('assets/coffee-beans.jpg')] bg-cover w-full h-screen">
-        <div class="h-full flex justify-center items-center">
-          <img class="w-48 sm:w-96" src="assets/logo-white.png" />
-        </div>
-      </div>
-      <!-- Section 2 -->
-      <div class="h-screen w-full px-[15%]">
-        <div class="grid grid-cols-12 h-full w-full flex justify-center items-center">
-          <div class="col-span-12 md:col-span-6 lg:col-span-4 mr-10">
-            <img class="w-80 md:w-96" src="assets/coffee-2.png" alt="coffee" />
-          </div>
-          <div class="col-span-12 md:col-span-6 lg:col-span-8">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est
-              laborum.</span>
+  <body>
+    <div class="main w-full h-max bg-zinc-50">
+      <!-- Navbar -->
+      <div class="navbar w-full h-16 fixed bg-zinc-900 z-10">
+        <div class="flex w-full h-full items-center justify-between pl-5">
+          <img
+            src="assets/logo-white.png"
+            width="50"
+            height="50"
+            class="flex items-center"
+          />
+          <div class="flex justify-end">
+            <a href="navbar.html" class="text-white pr-5"> HOME </a>
+            <a href="navbar.html" class="text-white pr-5"> MENU </a>
+            <a href="navbar.html" class="text-white pr-10"> ABOUT US </a>
           </div>
         </div>
       </div>
-      <!-- Section 3 -->
-      <div class="w-full h-screen bg-zinc-900"></div>
-      <!-- Products Section -->
-      <div class="w-full h-screen flex flex-col bg-zinc-50 items-center py-20">
-        <span class="text-4xl text-zinc-800 font-bold">Products</span>
-        <!-- Product Cards -->
-        <div class="flex space-x-8 py-10">
-          <!-- Product 1 -->
-          <div class="m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md">
-            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
-            <div class="mt-2 flex flex-col items-center">
-              <span class="font-bold">Product name</span>
-              <span class="text-sm">Php 1.00</span>
-            </div>
+
+      <div class="body">
+        <!-- Section 1 -->
+        <div
+          class="bg-[url('assets/coffee-beans.jpg')] bg-cover w-full h-screen"
+        >
+          <div class="h-full flex justify-center items-center">
+            <img class="w-48 sm:w-96" src="assets/logo-white.png" />
           </div>
-          <!-- Product 1 -->
-          <div class="m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md">
-            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
-            <div class="mt-2 flex flex-col items-center">
-              <span class="font-bold">Product name</span>
-              <span class="text-sm">Php 1.00</span>
+        </div>
+
+        <!-- Section 2 -->
+        <div
+          class="h-screen w-full bg-zinc-50 flex items-center justify-center"
+        >
+          <div class="grid grid-cols-12 gap-4">
+            <div
+              class="col-span-12 md:col-span-6 flex items-center justify-center py-8 m-4"
+            >
+              <img class="w-96" src="assets/coffee-3.png" alt="coffee" />
             </div>
-          </div>
-          <!-- Product 1 -->
-          <div class="m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md">
-            <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
-            <div class="mt-2 flex flex-col items-center">
-              <span class="font-bold">Product name</span>
-              <span class="text-sm">Php 1.00</span>
+            <div
+              class="col-span-12 md:col-span-6 flex items-center justify-center"
+            >
+              <span
+                class="flex flex-col col-span-12 md:col-span-6 mr-10 ml-10 md:mr-20 md:ml-0 items-center justify-center text-amber-900 text-xl italic font-medium md:text-6xl"
+                >"Good ideas start with great coffee"</span
+              >
             </div>
           </div>
         </div>
-        <button
-          class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm px-10 py-3 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700">
-          <p>See more products</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 24 24">
-            <path fill="currentColor"
-              d="M11.7 15.3q-.475.475-1.087.212Q10 15.25 10 14.575v-5.15q0-.675.613-.937q.612-.263 1.087.212l2.6 2.6q.15.15.225.325q.075.175.075.375t-.075.375q-.075.175-.225.325Z" />
-          </svg>
-        </button>
-      </div>
-      <!-- About Us Preview Section -->
-      <div class="w-full h-screen flex">
-        <div class="w-full md:w-1/2 flex items-center justify-center pt-16 m-4">
-          <img src="assets/store-img.jpg" class="preserveAspectRatio h-4/5 rounded-lg" />
-        </div>
-        <div class="w-1/2 w-full pr-20 flex flex-col items-left justify-center">
-          <h2 class="text-4xl font-bold text-zinc-800">About Us</h2>
-          <div class="py-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.
+
+        <!-- Section 3 -->
+        <!-- <div class="w-full h-screen bg-zinc-900"></div> -->
+        <!-- Products Section -->
+        <div class="w-full h-max flex flex-col bg-zinc-50 items-center py-20">
+          <span class="text-4xl text-zinc-800 font-bold">Products</span>
+          <div class="w-full h-max flex flex-col items-center">
+            <!-- Product Cards -->
+            <div class="flex space-x-8 py-10">
+              <div class="grid grid-cols-12 gap-4">
+                <!-- Product 1 -->
+                <div
+                  class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md"
+                >
+                  <img
+                    class="w-full rounded-lg shadow-md"
+                    src="assets/coffee-beans.jpg"
+                  />
+                  <div class="mt-2 flex flex-col items-center">
+                    <span class="font-bold">Product name</span>
+                    <span class="text-sm">Php 1.00</span>
+                  </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div
+                  class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md"
+                >
+                  <img
+                    class="w-full rounded-lg shadow-md"
+                    src="assets/coffee-beans.jpg"
+                  />
+                  <div class="mt-2 flex flex-col items-center">
+                    <span class="font-bold">Product name</span>
+                    <span class="text-sm">Php 1.00</span>
+                  </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div
+                  class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md"
+                >
+                  <img
+                    class="w-full rounded-lg shadow-md"
+                    src="assets/coffee-beans.jpg"
+                  />
+                  <div class="mt-2 flex flex-col items-center">
+                    <span class="font-bold">Product name</span>
+                    <span class="text-sm">Php 1.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm px-10 py-3 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700"
+            >
+              <p>See more products</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M11.7 15.3q-.475.475-1.087.212Q10 15.25 10 14.575v-5.15q0-.675.613-.937q.612-.263 1.087.212l2.6 2.6q.15.15.225.325q.075.175.075.375t-.075.375q-.075.175-.225.325Z"
+                />
+              </svg>
+            </button>
           </div>
-          <button
-            class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm w-40 py-3 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700">
-            <p>Full Story</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M11.7 15.3q-.475.475-1.087.212Q10 15.25 10 14.575v-5.15q0-.675.613-.937q.612-.263 1.087.212l2.6 2.6q.15.15.225.325q.075.175.075.375t-.075.375q-.075.175-.225.325Z" />
-            </svg>
-          </button>
         </div>
-      </div>
-      <!-- Contact Us Section -->
-      <div class="bg-zinc-50 bg-cover w-full h-screen flex flex-col justify-center items-center bg-zinc-50">
-        <div class="bg-white w-[80%] h-max py-14 flex flex-col items-center m-6 rounded-lg drop-shadow-md">
-          <span class="text-4xl text-zinc-800 font-bold">Contact Us</span>
-          <form class="w-full h-full flex flex-col items-center">
-            <input class="w-5/6 my-4 py-2 outline-none border-b-2 focus:border-zinc-700" type="text" name="name"
-              placeholder="Full Name" />
-            <input class="w-5/6 my-4 py-2 outline-none border-b-2 focus:border-zinc-700" type="text" name="email"
-              placeholder="E-mail" />
-            <textarea class="w-5/6 my-4 outline-none border-b-2 focus:border-zinc-700" rows="6"
-              placeholder="Message"></textarea>
-          </form>
-          <button
-            class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm px-16 py-3 mt-6 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700">
-            <p>Submit</p>
-          </button>
+        <!-- About Us Preview Section -->
+        <div class="w-full h-max flex">
+          <div class="grid grid-cols-12 gap-4">
+            <div
+              class="col-span-12 md:col-span-6 flex items-center justify-center py-8 m-4"
+            >
+              <img src="assets/store-img.jpg" class="h-4/5 rounded-lg" />
+            </div>
+            <div
+              class="flex flex-col col-span-12 md:col-span-6 mr-10 ml-10 md:mr-20 md:ml-0 items-center md:items-start justify-center"
+            >
+              <h2 class="text-4xl font-bold text-zinc-800">About Us</h2>
+              <div class="py-8 items-center md:items-start text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </div>
+              <button
+                class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm w-40 py-3 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700"
+              >
+                <p>Full Story</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.5em"
+                  height="1.5em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M11.7 15.3q-.475.475-1.087.212Q10 15.25 10 14.575v-5.15q0-.675.613-.937q.612-.263 1.087.212l2.6 2.6q.15.15.225.325q.075.175.075.375t-.075.375q-.075.175-.225.325Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
+        <!-- Contact Us Section -->
+        <div
+          class="bg-zinc-50 bg-cover w-full h-max flex flex-col justify-center items-center bg-zinc-50"
+        >
+          <div
+            class="bg-white w-[80%] h-max py-14 flex flex-col items-center mx-6 my-10 rounded-lg drop-shadow-md"
+          >
+            <span class="text-4xl text-zinc-800 font-bold">Contact Us</span>
+            <form class="w-full h-full flex flex-col items-center">
+              <input
+                class="w-5/6 my-4 py-2 outline-none border-b-2 focus:border-amber-900"
+                type="text"
+                name="name"
+                placeholder="Full Name"
+              />
+              <input
+                class="w-5/6 my-4 py-2 outline-none border-b-2 focus:border-amber-900"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+              />
+              <textarea
+                class="w-5/6 my-4 outline-none border-b-2 focus:border-amber-900"
+                rows="6"
+                placeholder="Message"
+              ></textarea>
+            </form>
+            <button
+              class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm px-16 py-3 mt-6 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700"
+            >
+              <p>Submit</p>
+            </button>
+          </div>
+        </div>
+        <!-- Footer -->
       </div>
-      <!-- Footer -->
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
