@@ -26,9 +26,9 @@
       <div class="flex w-full h-full items-center justify-between pl-5">
         <img src="assets/logo-white.png" width="50" height="50" class="flex items-center" />
         <div class="flex justify-end">
-          <a href="navbar.html" class="text-white pr-5"> HOME </a>
-          <a href="navbar.html" class="text-white pr-5"> MENU </a>
-          <a href="navbar.html" class="text-white pr-10"> ABOUT US </a>
+          <a href="index.html" class="text-white pr-5 hover:text-blue-300 transition-all"> HOME </a>
+          <a href="menu.html" class="text-white pr-5 hover:text-blue-300 transition-all"> MENU </a>
+          <a href="contact.html" class="text-white pr-10 hover:text-blue-300 transition-all"> ABOUT US </a>
         </div>
       </div>
     </div>
@@ -66,7 +66,8 @@
           <div class="flex space-x-8 py-10">
             <div class="grid grid-cols-12 gap-4">
               <!-- Product 1 -->
-              <div class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+              <div
+                class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md zoom-in">
                 <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
                 <div class="mt-2 flex flex-col items-center">
                   <span class="font-bold">Product name</span>
@@ -75,7 +76,8 @@
               </div>
 
               <!-- Product 2 -->
-              <div class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+              <div
+                class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md zoom-in">
                 <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
                 <div class="mt-2 flex flex-col items-center">
                   <span class="font-bold">Product name</span>
@@ -84,7 +86,8 @@
               </div>
 
               <!-- Product 3 -->
-              <div class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md">
+              <div
+                class="col-span-12 sm:col-span-6 lg:col-span-4 m-5 p-3 rounded-lg w-80 h-80 bg-white shadow-md zoom-in">
                 <img class="w-full rounded-lg shadow-md" src="assets/coffee-beans.jpg" />
                 <div class="mt-2 flex flex-col items-center">
                   <span class="font-bold">Product name</span>
@@ -94,15 +97,15 @@
             </div>
           </div>
 
-          <button
-            class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm px-10 py-3 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700">
+          <a type="button" href="menu.html"
+            class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm px-10 py-3 space-x-1 transition-all hover:-translate-y-0.5 hover:bg-zinc-700">
             <p>See more products</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 24 24">
               <path fill="currentColor"
                 d="M11.7 15.3q-.475.475-1.087.212Q10 15.25 10 14.575v-5.15q0-.675.613-.937q.612-.263 1.087.212l2.6 2.6q.15.15.225.325q.075.175.075.375t-.075.375q-.075.175-.225.325Z" />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
       <!-- About Us Preview Section -->
@@ -123,7 +126,7 @@
               nulla pariatur.
             </span>
             <button
-              class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm w-40 py-3 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700">
+              class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm w-40 py-3 space-x-1 hover:-translate-y-1 transition-all hover:bg-zinc-700">
               <p>Full Story</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 24 24">
@@ -147,12 +150,59 @@
               placeholder="Message"></textarea>
           </form>
           <button
-            class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm px-16 py-3 mt-6 space-x-1 hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-700">
+            class="flex justify-center items-center rounded-lg bg-zinc-800 text-white text-sm px-16 py-3 mt-6 space-x-1 hover:-translate-y-1 transition-all hover:bg-zinc-700">
             <p>Submit</p>
           </button>
         </div>
       </div>
       <!-- Footer -->
+      <footer>
+        <div class="footer w-full h-100 bg-zinc-900 text-white z-[999] mt-10">
+
+          <div class=" flex w-full h-full justify-center py-10">
+            <div class="pr-20">
+              <div class="pr-20">
+                <div class="pr-20">
+                  <p style="font-size:30px"> Location: </p>
+                  <p> San Jose Food Park, <br /> Calumpit, Bulacan
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p style="font-size:30px"> Opening Hours: </p>
+              <p>
+                Monday - Sunday <br />
+                4:00PM - 12:00AM
+
+              </p>
+            </div>
+            <div class="pl-20">
+              <div class="pl-20">
+                <div class="pl-20">
+                  <p style="font-size:30px"> Contacts: </p>
+                  <p>
+                  <table>
+                    <tr>
+                      <td><i class="fa-brands fa-facebook"></i></td>
+                      <td style="padding-left:10px;"><a href="https://www.facebook.com/lalinacafe"> La
+                          Lina Café</a> </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa-brands fa-instagram"></i> </td>
+                      <td style="padding-left:7px;"> <a href="https://www.instagram.com/lalina.cafe/">@lalina.cafe</a>
+                      </td>
+                    </tr>
+
+                    </p>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </footer>
     </div>
   </div>
 </body>
